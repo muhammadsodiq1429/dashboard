@@ -8,7 +8,7 @@ import Books from "../pages/dashboard/books";
 import ChildrenLiterature from "../pages/dashboard/books/children-literature";
 import Literature from "../pages/dashboard/books/literature";
 import ScientificAndEducational from "../pages/dashboard/books/scientific-and-educational";
-import Novels from "../pages/dashboard/books/scientific-and-educational/novels";
+import Novels from "../pages/dashboard/books/literature/novels";
 import Clothes from "../pages/dashboard/clothes";
 import Food from "../pages/dashboard/food";
 import Gadgets from "../pages/dashboard/gadgets";
@@ -16,6 +16,8 @@ import Health from "../pages/dashboard/health";
 import Shoes from "../pages/dashboard/shoes";
 import SportProducts from "../pages/dashboard/sport-products";
 import type { ILink } from "../types";
+import ShortStoriesAndNovellas from "../pages/dashboard/books/literature/short-stories-and-novellas";
+import Poetry from "../pages/dashboard/books/literature/poetry";
 
 export const LINKS: ILink[] = [
   {
@@ -31,7 +33,7 @@ export const LINKS: ILink[] = [
         children: [
           {
             id: 1,
-            path: "novels",
+            path: "",
             name: "Novels",
             element: <Novels />,
           },
@@ -39,13 +41,13 @@ export const LINKS: ILink[] = [
             id: 2,
             path: "short-stories-and-novellas",
             name: "Short Stories and Novellas",
-            element: <></>,
+            element: <ShortStoriesAndNovellas />,
           },
           {
             id: 3,
             path: "poetry",
             name: "Poetry",
-            element: <></>,
+            element: <Poetry />,
           },
         ],
       },
@@ -153,7 +155,6 @@ export const LINKS: ILink[] = [
 export const ACCESSORIES_LINK = [
   {
     id: 1,
-    index: true,
     path: "all",
   },
   {

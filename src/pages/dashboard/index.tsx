@@ -50,8 +50,8 @@ const Dashboard = () => {
               </NavLink>
               {link.children && showSubCategories === link.id && (
                 <ul className="px-2 pb-2">
-                  {link.children?.map((ch, i) => (
-                    <li key={i}>
+                  {link.children?.map((ch) => (
+                    <li key={ch.id}>
                       <NavLink
                         end
                         to={link.path + "/" + ch.path}

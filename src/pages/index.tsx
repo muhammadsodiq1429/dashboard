@@ -16,12 +16,10 @@ const Pages = () => {
             children: link.children?.map((childLink) => ({
               path: childLink.path,
               element: childLink.element,
-              children: link.children?.map((childLink2) => {
-                {
-                  console.log(childLink2);
-                  return { path: childLink2.path, element: childLink2.element };
-                }
-              }),
+              children: childLink.children?.map((childLink2) => ({
+                path: childLink2.path,
+                element: childLink2.element,
+              })),
             })),
           })),
         },

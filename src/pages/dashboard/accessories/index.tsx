@@ -10,7 +10,7 @@ const Accessories = () => {
         {ACCESSORIES_LINK.map((link) => (
           <li key={link.id}>
             <NavLink
-              to={link.index === true ? "" : link.path}
+              to={link.path}
               end
               className={({ isActive }) =>
                 `py-1 px-2 ${isActive ? "bg-green-200" : ""} `
